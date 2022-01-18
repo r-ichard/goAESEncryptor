@@ -6,7 +6,7 @@ use via command line `go run gocryptor.go`:
  - `-f` The path to the file you want to encrypt/decrypt
  - `-d` Decrypt the file
  - `-e` Encrypt the file
- - `-p` The key file used to encrypt/decrypt the file (16/24/32 bytes)
+ - `-p` The key file used to encrypt/decrypt the file (16/24/32 bytes) - Base64 in file expected
  - `-i` The identification vector(iv/nonce) (should change for every encryption) - Base64 Expected
  - `-t` The tag - Base64 Expected
  - `-a` The additional authentication data string
@@ -43,3 +43,4 @@ This was my first encryption project so I'll leave below some ressources I used 
 - https://github.com/rfjakob/gocryptfs/issues/222#issuecomment-379539825
 - https://github.com/Xeoncross/go-aesctr-with-hmac/blob/master/crypt.go
 - https://github.com/gtank/cryptopasta/blob/master/encrypt.go
+- https://levelup.gitconnected.com/a-short-guide-to-encryption-using-go-da97c928259f

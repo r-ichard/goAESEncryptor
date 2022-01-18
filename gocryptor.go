@@ -21,7 +21,7 @@ func main() {
 	flag.StringVar(&filePath, "f", "", "The path to the file you want to encrypt/decrypt")
 	flag.BoolVar(&decrypt, "d", false, "Used to tell the Command-line that you want to decrypt the file")
 	flag.BoolVar(&encrypt, "e", false, "Used to tell the Command-line that you want to encrypt the file")
-	flag.StringVar(&keyPath, "p", "", "The key file used to encrypt/decrypt the file (16/24/32 bytes)")
+	flag.StringVar(&keyPath, "p", "", "The key file used to encrypt/decrypt the file (16/24/32 bytes) - Base64 encoded expected")
 	flag.StringVar(&ivString, "i", "", "The identification vector (should change for every encryption) - Base64 Expected")
 	flag.StringVar(&tagString, "t", "", "The tag - Base64 Expected")
 	flag.StringVar(&aadString, "a", "", "The additional authentication data string")
